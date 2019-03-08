@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function getCurreny(country) {
+            switch (country) {
+                case "Australia":
+                    return "AUD Australian dollar";
+                    break;
+                case "Ireland":
+                    return "Euro";
+                    break;
+                case "England":
+                    return "Sterling";
+                    break;
+                case "China":
+                    return "Chinese yuan renminbi (RMB)";
+                    break;
+                case "Egypt":
+                    return "EGP Egyption pound";
+                    break;
+                case "Iceland":
+                    return "ISK Icelandic krona";
+                    break;
+                default:
+                    return "not known";
+                    break;
+
+
+            }
+
+    }
+</script>
+
+<form name="currency">
+    Which Country: <input type="text" name="country">
+    Result:  <input type="text" name="result">
+    <input type="button" onclick="var res = getCurreny(document.currency.country.value);
+    document.currency.result.value=res"/>
+
+</form>
+
+</body>
+</html>

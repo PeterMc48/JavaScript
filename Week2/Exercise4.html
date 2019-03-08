@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function calaAdd() {
+        let num1 = parseInt(document.calaculate.num1.value);
+        let num2 = parseInt(document.calaculate.num2.value);
+        let result = (num1 + num2);
+        document.calaculate.result.value = result;
+    }
+    function calaSub() {
+        let num1 = parseInt(document.calaculate.num1.value);
+        let num2 = parseInt(document.calaculate.num2.value);
+        let result = (num1 - num2);
+        document.calaculate.result.value = result;
+    }
+    function calaMul() {
+        let num1 = parseInt(document.calaculate.num1.value);
+        let num2 = parseInt(document.calaculate.num2.value);
+        let result = (num1 * num2);
+        document.calaculate.result.value = result;
+    }
+    function calaDiv() {
+        let num1 = parseInt(document.calaculate.num1.value);
+        let num2 = parseInt(document.calaculate.num2.value);
+        let result = (num1 / num2);
+        document.calaculate.result.value = result;
+    }
+    function calaMon() {
+        let num1 = parseInt(document.calaculate.num1.value);
+        let num2 = parseInt(document.calaculate.num2.value);
+        let result = (num1 % num2);
+        document.calaculate.result.value = result;
+    }
+
+</script>
+<form method="get" action="" name="calaculate">
+    <label>Number 1:</label><input type="text" name ="num1" value=""><br>
+    <label>Number 2:</label><input type="text" name ="num2" value=""><br>
+    <label>Get Result:</label><input type="text" name="result"><br>
+    <input type="button" value ="ADD"
+           onclick="var res = calaAdd()">
+    <input type="button" value ="SUB"
+           onclick="var res = calaSub()">
+    <input type="button" value ="MUL"
+           onclick="var res = calaMul()">
+    <input type="button" value ="DIV"
+           onclick="var res = calaDiv()">
+    <input type="button" value ="DIV"
+           onclick="var res = calaMon()">
+
+
+</form>
+
+</body>
+</html>

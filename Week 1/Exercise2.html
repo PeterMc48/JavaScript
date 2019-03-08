@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title></title>
+    <meta charset='utf-8'>
+  </head>
+  <body>
+       <script>
+            var minHandling = 1.5;
+            var over25 = .1;
+            var purchase = 60;
+            var salePrice = 0;
+            
+            (purchase <= 25) ? salePrice = 
+            purchase + minHandling: salePrice = 
+            purchase * over25 + purchase;
+                
+            alert("Your sales total with shipping and handling is €"+salePrice.toFixed(2));
+            
+       </script>
+
+  </body>
+</html>

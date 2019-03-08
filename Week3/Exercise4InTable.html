@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let brush_price = 5;
+    let counter = 10;
+    document.write("<table><tr><th>No of Brushes</th><th>Cost</th></tr>");
+    while(counter <= 100){
+        document.write("<tr><td>"+ counter +"</td>");
+            document.write("<td>"+ brush_price * counter + "</td></tr>");
+        counter += 10;
+    }
+    document.write("</table>");
+</script>
+
+</body>
+</html>

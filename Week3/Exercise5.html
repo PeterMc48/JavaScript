@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            border: 1px solid black;
+        }
+        td {
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+<script>
+    let num =1;
+
+
+    document.write("<table><tr><th>Number</th><th>Squared</th><th>Cubed</th></tr>");
+    while (num <= 100)
+    {
+        let sqr = num * num;
+        let cube = num*num*num
+        document.write("<tr><td>"+num+"</td><td>"+sqr+"</td><td>"+cube+"</td></tr>");
+       ;
+        num++;
+    }
+    document.write("</table>");
+
+</script>
+
+</body>
+</html>

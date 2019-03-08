@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var studentone = window.prompt("Please enter the students name");
+    var studenttwo = window.prompt("Please enter the second students name");
+    var studentthree = window.prompt("Please enter the third students name");
+    function callStudentName() {
+        document.writeln("The name of the first student is "+studentone+
+                         "The name of the second student is "+studenttwo+
+                        "The name of the third student is "+studentthree);
+    }
+
+</script>
+    <form method="get">
+        <input type="radio" name="students" onclick = callStudentName()>Students Names
+    </form>
+</body>
+</html>

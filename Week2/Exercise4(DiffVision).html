@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function calaAdd(num1, num2) {
+        let result = (num1 + num2);
+        return result;
+    }
+    function calaSub(num1, num2) {
+
+        let result = (num1 - num2);
+        return result;
+    }
+    function calaMul(num1, num2) {
+
+        let result = (num1 * num2);
+        return result;
+    }
+    function calaDiv(num1, num2) {
+
+        let result = (num1 / num2);
+        return result;
+    }
+    function calaMon(num1, num2) {
+
+        let result = (num1 % num2);
+        return result;
+    }
+
+</script>
+<form method="get" action="" name="calaculate">
+    <label>Number 1:</label><input type="text" name ="num1" value=""><br>
+    <label>Number 2:</label><input type="text" name ="num2" value=""><br>
+    <label>Get Result:</label><input type="text" name="result"><br>
+    <input type="button" value ="ADD"
+           onclick="var res = calaAdd(parseInt(document.calaculate.num1.value),parseInt(document.calaculate.num2.value));
+            document.calaculate.result.value = res">
+    <input type="button" value ="SUB"
+           onclick="var res = calaSub(parseInt(document.calaculate.num1.value),parseInt(document.calaculate.num2.value));
+            document.calaculate.result.value = res">
+    <input type="button" value ="MUL"
+           onclick="var res = calaMul(parseInt(document.calaculate.num1.value),parseInt(document.calaculate.num2.value));
+            document.calaculate.result.value = res">
+    <input type="button" value ="DIV"
+           onclick="var res = calaDiv(parseInt(document.calaculate.num1.value),parseInt(document.calaculate.num2.value));
+            document.calaculate.result.value = res">
+    <input type="button" value ="DIV"
+           onclick="var res = calaMon(parseInt(document.calaculate.num1.value),parseInt(document.calaculate.num2.value));
+            document.calaculate.result.value = res">
+
+
+</form>
+
+</body>
+</html>

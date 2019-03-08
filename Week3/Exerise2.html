@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let country = window.prompt("Which country's currency would you like?");
+
+    function currency(country)
+    {
+        switch (country){
+            case "Australia":
+            return "AUD Australian dollar";
+            break;
+            case "Ireland":
+            return "Euro";
+            break;
+            case "England":
+            return "Sterling";
+            break;
+            case "China":
+            return "Chinese yuan renminbi (RMB)";
+            break;
+            case "Egypt":
+            return "EGP Egyption pound";
+            break;
+            case "Iceland":
+            return "ISK Icelandic krona";
+            break;
+            default:
+                return "not known";
+                break;
+
+
+        }
+    }
+
+    window.alert(country + ": " + currency(country));
+
+</script>
+
+</body>
+</html>
